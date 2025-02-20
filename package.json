@@ -2,6 +2,7 @@
   "name": "Visahakha-portfolio",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://vishakha293.github.io/Portfolio",
   "dependencies": {
     "@react-pdf/renderer": "^2.2.0",
     "@testing-library/jest-dom": "^5.16.2",
@@ -52,6 +53,5 @@
   },
   "devDependencies": {
     "gh-pages": "^6.3.0"
-  },
-  "homepage": "https://github.com/vishakha293/Portfolio"
+  }
 }
