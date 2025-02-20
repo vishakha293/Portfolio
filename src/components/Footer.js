@@ -6,7 +6,7 @@ import {
   AiFillInstagram,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
-
+// Adding Comment
 function Footer() {
   return (
     <Container fluid className="footer">
