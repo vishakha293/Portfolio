@@ -1,6 +1,5 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import { CgCPlusPlus } from "react-icons/cg";
 import {
   DiJavascript1,
   DiReact,
@@ -14,8 +13,6 @@ import { SiSailsdotjs, SiEjs, SiThymeleaf, SiMysql } from "react-icons/si";
 import { BiLogoSpringBoot } from "react-icons/bi";
 import { FaHtml5,FaCss3, FaAws, FaDocker } from "react-icons/fa";
 import { SiExpress } from "react-icons/si";
-import { TbBrandVscode } from "react-icons/tb";
-import { SiThealgorithms } from "react-icons/si";
 
 function Techstack() {
   return (

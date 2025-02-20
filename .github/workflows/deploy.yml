@@ -20,9 +20,11 @@ jobs:
 
       - name: Install dependencies
         run: npm install
+      - name: Update Browserslist DB
+        run: npx browserslist@latest --update-db
 
       - name: Build the app
-        run: npm run build
+        run: CI=false npm run build
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
