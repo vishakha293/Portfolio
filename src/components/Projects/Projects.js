@@ -13,12 +13,12 @@ import Heffernan from "../../Assets/Projects/Heffernan.PNG";
 import IGRS from "../../Assets/Projects/IGRS.PNG";
 
 const projects = [
-  { imgPath: ats, title: 'ATS', description: 'ATS Project' },
-  { imgPath: KonarkPro, title: 'Konark', description: 'Konark Project' },
-  { imgPath: Heffernan, title: 'Heffernan', description: 'Heffernan Project' },
-  { imgPath: IGRS, title: 'IGRS', description: 'IGRS Project' },
-  { imgPath: YEIDA, title: 'YEIDA', description: 'YEIDA Project' },
-  { imgPath: HPBoard, title: 'HPBoard', description: 'HPBoard Project' }
+  { imgPath: ats, title: 'ATS', description: 'A recruitment management tool for evaluating candidates, tracking applications, and generating insightful reports.' },
+  { imgPath: KonarkPro, title: 'Konark', description: ' A SaaS platform for time tracking and workforce management with invoicing and reporting capabilities.' },
+  { imgPath: Heffernan, title: 'Heffernan', description: 'Enterprise-grade web applications for insurance brokers to manage databases, resources, and user roles.' },
+  { imgPath: IGRS, title: 'IGRS', description: 'A government system for document registration and data verification for Chhattisgarh State.' },
+  { imgPath: YEIDA, title: 'YEIDA', description: 'Government project for managing land and vendor documentation for industrial infrastructure.' },
+  { imgPath: HPBoard, title: 'HPBoard', description: 'Education board platform for managing examination records and student data.' }
 ];
 
 function Projects() {
@@ -31,9 +31,10 @@ function Projects() {
       if (hoveredIndex === null) {
         setActiveIndex((prevIndex) => (prevIndex + 1) % projects.length);
       }
-    }, 5000);
+    }, 2000);
     return () => clearInterval(interval);
-  }, [hoveredIndex]);
+  }, [hoveredIndex]);  
+  
 
   return (
     <Container fluid className="project-section">

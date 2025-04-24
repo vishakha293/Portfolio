@@ -1,0 +1,83 @@
+.project-detail-container {
+    position: relative;
+    min-height: 100vh;
+    padding: 4rem 1rem;
+    background: transparent; /* Particle background will show */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  .project-detail-card {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 2rem;
+    border-radius: 16px;
+    max-width: 800px;
+    width: 100%;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .project-detail-card h1 {
+    color: #672c35;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+  }
+  
+  .slideshow {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+  }
+  
+  .slideshow img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .project-description {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin: 1rem 0;
+    color: #333;
+  }
+  
+  .tech-stack {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .tech-stack li {
+    background: #672c35;
+    color: #fff;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+  }
+  
+  .project-links {
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+  }
+  
+  .project-links li {
+    margin-bottom: 8px;
+  }
+  
+  .project-links a {
+    color: #672c35;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .project-links a:hover {
+    color: #ff6b82;
+  }

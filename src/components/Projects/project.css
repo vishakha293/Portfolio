@@ -1,4 +1,4 @@
-/* project.css */
+
 .project-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr); 
@@ -9,12 +9,14 @@
   max-width: 1200px;
   margin: 0 auto;
   height: 90vh;
+  padding: 0 10px;
   transition: grid-template-columns 0.5s ease, grid-template-rows 0.5s ease;
+  box-sizing: border-box;
 }
 
 .grid-item {
   cursor: pointer;
-  border: 1px solid #ccc;
+  border: 1px solid #fff;
   border-radius: 12px;
   overflow: hidden;
   transition: transform 0.5s ease, box-shadow 0.5s ease;
@@ -26,9 +28,30 @@
 }
 
 .project-image {
-  width: 100%;
-  height: 200px;
+  width: 100%; /* Ensure image doesn’t overflow */
+  max-width: calc(100% - 20px); /* Account for 10px padding on each side */
+  height: auto;
+  border-radius: 8px;
   object-fit: cover;
+  flex-shrink: 0;
+  object-position: center;
+}
+
+.project-card h3 {
+  font-size: 1.5rem;
+  /* color: #FF6B82; */
+  color: #672c35;
+  margin: 0;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.project-card p {
+  font-size: 1rem;
+  color: #000;
+  line-height: 1.6;
+  margin: 0;
 }
 
 .grid-item:hover {
@@ -64,4 +87,4 @@
   .project-image {
     height: 150px;
   }
-}
+} 

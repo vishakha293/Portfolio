@@ -7,9 +7,9 @@ html {
 
   --image-gradient: linear-gradient(
     to bottom left,
-    rgba(17, 16, 16, 0.678),
-    rgba(12, 10, 22, 0.863)
-  );
+    rgba(17, 16, 16, 0.3),   /* More transparent */
+    rgba(12, 10, 22, 0.4)    /* More transparent */
+);
 
   --imp-text-color: #c770f0;
 }
@@ -448,51 +448,20 @@ button:focus {
   position: relative !important;
   padding-top: 150px !important;
   padding-bottom: 30px !important;
-  background-image: var(--section-background-color) !important;
+  background-image: var(--image-gradient), url(./Assets/bg3.jpeg) !important;
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  background-position: center; 
+  background-attachment: fixed;
 }
 
 .project-card {
   padding-top: 50px !important;
   padding-bottom: 50px !important;
-  padding-left: 25px !important;
+  padding-left: 14px !important;
   padding-right: 25px !important;
   height: auto !important;
 }
-
-.project-card-view {
-  transition: transform 0.2s;
-  box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459) !important;
-  color: white !important;
-  background-color: transparent !important;
-  opacity: 0.9 !important;
-  transition: all 0.5s ease 0s !important;
-  height: 100% !important;
-}
-.project-card-view:hover {
-  transform: scale(1.05) !important;
-  overflow: hidden !important;
-  box-shadow: 0 4px 4px 5px rgba(129, 72, 144, 0.561) !important;
-}
-
-.laptop-screen {
-  width: 100%;
-  height: 200px;
-  background: #000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.laptop-screen img.slideshow {
-  max-width: 100%;
-  height: auto;
-}
-
-.laptop-description {
-  padding: 20px;
-  color: #fff;
-}
-
 
 .blog-card {
   padding-top: 50px !important;
